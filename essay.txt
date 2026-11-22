@@ -1,0 +1,37 @@
+1. What is the difference between forEach and for...of? When would you use each?
+answer : 
+we can't use "break" or "continue" in forEach ,but in for of we can use "break" and "continue"
+so,we use for of when we need more control on the operations 
+
+
+2.What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples
+answer : 
+hoisting : is a process declartion all variables and functions at the beging of the code before excuting the code
+ex -> variables declared with var can be accessed before declartion and return undefined
+console.log(x); 
+var x = 10 ;
+
+TDZ: when let and const variables can't be accessed before their declartion and it's going to cause a ReferenceError 
+console.log(z)
+let z = 20 ;
+
+
+3.What are the main differences between == and ===?
+answer : == is comparing values after conversion the data type and make them have the same data type 
+=== is comparing values with out conversion the data type 
+
+
+4. Explain how try-catch works and why it is important in async operations 
+answer : " try " contains code that might throw an error , " catch " to handle that error 
+and it's important for async operations because of handling the rejected promises 
+
+
+5. What’s the difference between type conversion and coercion? Provide examples of each. 
+answer :
+ type conversion is converting type of variables to another data type 
+ex -> x="10"
+Number(x)
+
+type coercion is converting the type of value to another type 
+"5" + 10 = 510
+"5" * 2 = 10 
